@@ -14,6 +14,8 @@ function fibs(n) {
 }
 
 function fibsRec(n) {
+    console.log("This was printed recursively");
+
     if (n <= 1) return [0]
     if (n === 2) return [0, 1]
     const prevArray = fibsRec(n - 1)
@@ -22,5 +24,5 @@ function fibsRec(n) {
     return [...prevArray, nextArray]
 }
 
-console.log(fibs(10))
-console.log(fibsRec(10))
+console.log(fibs(8))
+console.log(fibsRec(8))
